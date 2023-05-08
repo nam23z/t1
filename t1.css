@@ -1,0 +1,44 @@
+label{
+    min-width: 10%;
+    display: inline-block;
+}
+footer{
+    text-align: center;
+}
+input{
+    min-width: 12%;
+    display: inline-block;
+}
+ul {
+   list-style: none;
+   display: flex;
+}
+ul li{
+    padding: 2%;
+}
+ul li a{
+    text-decoration: none;
+    color:blue;
+}
+.left{
+    display: inline-block;
+    width: 50%;
+    margin: 0;
+}
+.right{
+    float: right;
+    width: 50%;
+    margin: 0;
+}
+.ob2{
+    padding-bottom: 45%;
+}
+.ob .radi{
+    margin-left: 4%;
+}
+.submit{
+    width: 20%;
+}
+.clear{
+    clear: both;
+}
