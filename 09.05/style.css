@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+header .category,.banner{
+    text-align: center;
+}
+.category{
+    display: flex;
+    justify-content: center;
+}
+.category p{
+    padding: 1%;
+}
+.banner{
+    background-image: url(pexels-roberto-nickson-2486168.jpg);
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+.banner h1{
+    font-size:50px;
+}
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+section{
+    width: 80%;
+    margin: 0 auto;
+}
+.search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid;
+    margin-bottom: 1%;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.im{
+    background-image: url(pexels-roberto-nickson-2486168.jpg);
+    width: 29%;
+    height: 300px;
+    display: inline-block;
+    border-radius: 7%;
+    position: relative;
+
+}
+.z{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: aliceblue;
+}
