@@ -128,3 +128,24 @@ select{
 .btn button:hover{
     transform: scale(1.2);
 }
+@media only screen and (max-width : 390px) {
+    .main-menu{
+        width: 15%;
+        height: 844px;
+    }
+    .st{
+        border-radius: 50%;
+        padding: 5px;
+    }
+    .avt svg{
+        width: 85%;
+    }
+    .st{
+        border-radius: 50%;
+        padding: 1%;
+        margin-bottom: 10%;
+    }
+    .st svg{
+        width: 100%;
+    }
+}
