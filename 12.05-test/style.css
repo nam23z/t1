@@ -275,13 +275,13 @@ ul{
     position: relative;
 }
 .outer-ws::-webkit-scrollbar{
-    height: 5px;
+    height: 6px;
 }
 .outer-ws::-webkit-scrollbar-track{
     -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, 0);
 }
 .outer-ws::-webkit-scrollbar-thumb {
-    height: 5px;
+    height: 6px;
     background-color: #C1DCDC;
 }
 .outer-ws::-webkit-scrollbar-thumb:hover {
