@@ -337,13 +337,21 @@ ul{
 .card-name-n{
     width: 60%;
 }
-.card-name-rate{
-    width: 15%;
-    text-align: right;
+.card-name-n h5{
+    margin-bottom: 0;
+    margin-top: 0;
 }
 .card-name-n p{
     font-size: 12px;
     margin-top: 0;
+    color: rgba(30, 30, 30, 0.5);
+}
+.card-name-rate{
+    width: 15%;
+    text-align: right;
+}
+.card-name-rate span{
+    font-weight: bold;
 }
 .card-img img{
     width: 150px;
