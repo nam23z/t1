@@ -90,6 +90,7 @@ ul{
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    padding-bottom: 20px;
 }
 .banner{
     width: 100%;
@@ -190,8 +191,16 @@ ul{
     justify-content: space-between;
     gap: 5%;
 }
+.plant{
+    width: 25%;
+}
 .plant p{
     color: rgba(30, 30, 30, 0.5);
+}
+.plant img{
+    width: 100%;
+    height: 384px;
+    border-radius: 10px;
 }
 .about-us{
     text-align: center;
