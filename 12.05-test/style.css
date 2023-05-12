@@ -1,0 +1,380 @@
+body{
+    margin: 0 auto;
+    background-color: lightgrey;
+    /* overflow: hidden; */
+    height: 100vh;
+}
+.clear{
+    clear: both;
+}
+h1,h2,h3,h4,h5,p,a,span, th,td{
+    font-family: 'Poppins';
+}
+a,button{
+    cursor: pointer;
+}
+footer{
+    background-color: #C1DCDC;
+    width: 100%;
+    display: flex;
+}
+.logo{
+    font-family: 'Aclonica';
+    font-size: 36px;
+    padding-right: 10%;
+    padding-left: 0;
+}
+.wrapper {
+    background-color: white;
+    padding: 30px 70px;
+    width: 1440px;
+    margin: 0 auto;
+}
+  
+ul{
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    width: 50%;
+}
+.nav li a{
+    text-decoration: none;
+    color: #1E1E1E;
+    opacity: 0.5;
+}
+
+#content {
+    overflow: auto;
+}
+
+.column1, .column2, .column3 {
+    width: 31.3%;
+    float: left;
+}
+  
+.column1 {
+    float: left;
+}
+.column2 {
+    margin: 0% 3%;
+}
+.column3 {
+    float: right;
+    margin: 0%;
+}
+  
+.nav li {
+    display: inline;
+    padding-right: 5%;
+}
+.top-icon{
+    text-align: right;
+    width: 30%;
+}
+.top-icon li{
+    display: inline-block;
+    padding-left: 10%;
+}
+.ca{
+    border-right: 1px solid black;
+    padding-right: 10%;
+}
+.banner, .article {
+    background-color: #C1DCDC;
+    margin-bottom: 1em;
+    height: auto;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.banner{
+    width: 100%;
+    display: flex;
+}
+.banner-left{
+    width: 50%;
+    padding-top: 1%;
+    padding-left: 5%;
+}
+.banner-left h1{
+    font-family: 'Poppins';
+    font-style: ExtraBold;
+    font-size: 64px;
+    line-height: 64px;
+    width: 70%;
+    font-weight: 900;
+}
+.banner-right{
+    width: 50%;
+    text-align: right;
+    padding-right: 5% ;
+}
+.banner-right svg{
+    margin-bottom: -3px;
+}
+.num{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Poppins';
+    font-size: 20px;
+}
+.num p{
+    margin: 0;
+}
+.plants{
+    border-right: 1px solid;
+    padding-right: 10%;
+}
+.input-banner{
+    width: 50%;
+    margin-top: 5%;
+    background-color: white;
+    border-radius: 10px;
+    padding-left: 2%;
+}
+.input-banner input{
+    width: 80%;
+    height: 5em;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+.input-banner input[type=text]:focus{
+    border: 1px solid white;
+}
+.icon-search1{
+    float: right;
+    background-color: #C1DCDC;
+    width: 5%;
+    padding: 2% 4%;
+    margin-top: 3.5%;
+    margin-right: 4%;
+    border-radius: 20%;
+}
+.icon-search1 svg{
+    padding-top: 40%;
+}
+.best-seller, .about-us, .categories, .what-say{
+    width: 100%;
+    height: auto;
+    margin-bottom: 1em;
+}
+.bs-left{
+    width: 19%;
+    display: inline-block;
+}
+.bs-left h3{
+    font-size: 32px;
+}
+.bs-left p{
+    color: rgba(30, 30, 30, 0.5);
+}
+.bs-left button{
+    background-color: #C1DCDC;
+    padding: 5%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    width: 60%;
+}
+.bs-right{
+    width: 80%;
+    float: right;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 5%;
+}
+.plant p{
+    color: rgba(30, 30, 30, 0.5);
+}
+.about-us{
+    text-align: center;
+}
+.about-us p{
+    color: rgba(30, 30, 30, 0.5);
+}
+.about{
+    display: flex;
+}
+.ab{
+    width: 33%;
+    padding: 1%;
+}
+.ab h5{
+    font-size: 20px;
+}
+.bo{
+    background-color: #C1DCDC;
+    border-radius: 50%;
+    padding: 20px;
+    display: inline-block;
+}
+.categories{
+    text-align: center;
+}
+.categories p{
+    color: rgba(30, 30, 30, 0.5);
+}
+.cate{
+    background-color: #C1DCDC;
+    padding-bottom: 20px;
+}
+.cate-img{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+.cate-img img{
+    width: 100%;
+    border-radius: 10px;
+}
+.cate-img1, .cate-img2, .cate-img3{
+    width: 25%;
+    display: inline-block;
+    text-align: center;
+}
+.cate-img1,.cate-img3{
+    transform: translateY(-20%);
+}
+
+.cate-img3{
+    height: 540px;
+}
+.cate-img3 img{
+    height: 100%;
+}
+.cate-btn button{
+    background-color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+.outer-ws{
+    max-width: 100vw;
+    overflow-x: scroll;
+    position: relative;
+    scrollbar-color: #d5ac68 #f1db9d;
+    scrollbar-width: thin;
+    -ms-overflow-style: none;
+}
+.scrll{
+    background-color: #f1db9d;
+    height: 2px;
+    width: 100%;
+    position: relative;
+    top: -3px;
+    z-index: -10;
+}
+.outer-ws::-webkit-scrollbar{
+    height: 5px;
+}
+.outer-ws::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, 0);
+}
+.outer-ws::-webkit-scrollbar-thumb {
+    height: 5px;
+    background-color: #d5ac68;
+}
+.outer-ws::-webkit-scrollbar-thumb:hover {
+    background-color: #f1db9d;
+}
+.outer-ws::-webkit-scrollbar:vertical {
+    display: none;
+}
+.ws{
+    width: 100%;
+    display: flex;
+    padding-bottom: 10px;
+}
+.what-say h2{
+    width: 30%;
+    font-size: 32px;
+    line-height: 48px;
+}
+.card{
+    width: 60%;
+    height: 330px;
+    background-color: #C1DCDC;
+    border-radius: 10px;
+    padding: 20px;
+    display: inline-block;
+    flex-shrink: 0;
+    margin-right: 100px;
+}
+.card-content{
+    font-size: 18px;
+}
+.card-name{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.card-name-eo{
+    width: 5% ;
+}
+.card-img{
+    width: 20%;
+}
+.card-name-n{
+    width: 60%;
+}
+.card-name-rate{
+    width: 15%;
+    text-align: right;
+}
+.card-name-n p{
+    font-size: 12px;
+    margin-top: 0;
+}
+.card-img img{
+    width: 150px;
+}
+.footer-left{
+    width: 50%;
+    padding: 50px;
+}
+.footer-right{
+    width: 50%;
+    padding: 50px;
+}
+.footer-left .ft-p1{
+    color: rgba(30, 30, 30, 0.5);
+    width: 23%;
+}
+.footer-left .ft-p2{
+    color: rgba(30, 30, 30, 0.5);
+    width: 100%;
+}
+.ft-bo{
+    display: flex;
+    justify-content: space-between;
+    width: 27%;
+    padding-bottom: 80px;
+}
+.bo2{
+    border: 1px solid rgba(30, 30, 30, 0.75);
+    border-radius: 50%;
+    padding: 10px;
+    display: inline-grid;
+}
+.footer-right table{
+    padding: 20px;
+    margin: 0 auto;
+}
+.footer-right table th{
+    font-size: 18px;
+}
+.footer-right table td{
+    color: rgba(30, 30, 30, 0.5);
+}
+.footer-right table th,td{
+    padding-right: 30px;
+    padding-bottom: 20px;
+}
