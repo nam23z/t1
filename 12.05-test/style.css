@@ -387,7 +387,7 @@ ul{
     padding-right: 30px;
     padding-bottom: 20px;
 }
-@media screen and (max-width:428px) {
+@media screen  and (min-width:350px) and (max-width: 426px){
     .wrapper {
         padding: 0;
         width: 390px;
