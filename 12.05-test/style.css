@@ -240,6 +240,9 @@ ul{
     justify-content: space-around;
     padding-top: 50px;
 }
+.cate-img h5{
+    font-size: 18px;
+}
 .cate-img img{
     width: 100%;
     border-radius: 10px;
@@ -301,6 +304,7 @@ ul{
     width: 100%;
     display: flex;
     padding-bottom: 10px;
+    gap: 50px;
 }
 .what-say h2{
     width: 30%;
@@ -315,7 +319,6 @@ ul{
     padding: 20px;
     display: inline-block;
     flex-shrink: 0;
-    margin-right: 100px;
 }
 .card-content{
     font-size: 18px;
