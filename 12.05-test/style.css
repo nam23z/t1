@@ -5,7 +5,7 @@ body{
 .clear{
     clear: both;
 }
-h1,h2,h3,h4,h5,p,a,span, th,td{
+h1,h2,h3,h4,h5,p,a,span, th,td, input{
     font-family: 'Poppins';
 }
 a,button{
@@ -96,6 +96,7 @@ ul{
 .banner{
     width: 100%;
     display: flex;
+    border-radius: 12px ;
 }
 .banner-left{
     width: 50%;
@@ -138,13 +139,14 @@ ul{
     margin-top: 5%;
     background-color: white;
     border-radius: 10px;
-    padding:18px;
+    padding: 6px;
 }
 .input-banner input{
-    width: 60%;
+    width: 100%;
     border: none;
     outline: none;
     border-radius: 10px;
+    font-size: 18px;
 }
 .ip-ip{
     width: 95%;
@@ -271,14 +273,6 @@ ul{
     max-width: 100vw;
     overflow-x: scroll;
     position: relative;
-}
-.scrll{
-    background-color: #f1db9d;
-    height: 2px;
-    width: 100%;
-    position: relative;
-    top: -3px;
-    z-index: -10;
 }
 .outer-ws::-webkit-scrollbar{
     height: 5px;
