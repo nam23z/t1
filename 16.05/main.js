@@ -75,7 +75,7 @@ for(let i = 2; i<=9;i++){
         console.log(i +" x "+ j +" = " + i*j );
     }
 }
-
+//---------------------- tao the p va them thuoc tinh
 document.getElementsByClassName("introduce")[1].style.color = "red";
 const pa = document.createElement("p");
 pa.innerHTML= 'ahihi';
