@@ -83,3 +83,24 @@ pa.style.margin = 0;
 pa.style.color = "blue";
 
 document.body.appendChild(pa);
+
+//-------------------------------
+// const nnn = (even) => {
+//   even.innerHTML = "zozozozo";
+//   document.getElementById("demo").innerHTML = "zzzzz";
+//   document.getElementById("cl").style.color = "green";
+// }
+function nnn(){
+  document.getElementById("demo").innerHTML = "zzz";
+}
+
+function myfunction(){
+  var x = document.getElementById("fname").value;
+  let tm = document.createElement("p");
+  tm.innerHTML = x;
+  document.body.appendChild(tm);
+}
+function myfunction2(){
+  var x = document.getElementById("mySelect").value;
+  document.getElementById("xe").innerHTML= "your car is " + x;
+}
