@@ -47,24 +47,27 @@ const x = (x) => {
   }
 };
 x(12);
-// ------------------- nhap i, in ra day so tu 0 den i
 
+// ------------------- nhap i, in ra day so tu 0 den i
 const dayi= i=>{
     for(let j = 0; j <=i; j++){
         console.log(j)
     }
 }
 dayi(5);
+
 // ------------------- vong lap tinh tong cac so tu 1 den 100
 let tong100 = 0;
     for(let i = 1; i<=100;i++){
         tong100 = tong100 +i;
     }
     console.log(tong100);
+
 // ------------------- bang cuu chuong 9 bang vong lap
 for(let i = 1; i<=10;i++){
     console.log("9 x " + i+ " = " + 9*i);
 }
+
 // ------------------- bang cuu chuong tu 2 den 9
 console.log("bang cuu chuong tu 2 den 9");
 for(let i = 2; i<=9;i++){
