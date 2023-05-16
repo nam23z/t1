@@ -75,3 +75,11 @@ for(let i = 2; i<=9;i++){
         console.log(i +" x "+ j +" = " + i*j );
     }
 }
+
+document.getElementsByClassName("introduce")[1].style.color = "red";
+const pa = document.createElement("p");
+pa.innerHTML= 'ahihi';
+pa.style.margin = 0;
+pa.style.color = "blue";
+
+document.body.appendChild(pa);
