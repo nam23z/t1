@@ -104,3 +104,30 @@ function myfunction2(){
   var x = document.getElementById("mySelect").value;
   document.getElementById("xe").innerHTML= "your car is " + x;
 }
+//----------------- Array
+var student = ["david truong", "peter phu", "alex nam","nhat anh", "vy","Quynh anh", "khuong"];
+console.log("chieu dai cua array student la " + student.length);
+const vitri = student.findIndex((v)=> v=== "nhat anh");
+
+console.log(vitri);
+//---------- xoa phan tu dau tien
+student.shift();
+//---------- xoa phan tu cuoi cung
+student.pop();
+console.log(student);
+
+//------------- tao string moi noi phan tu trong mang bang dau gach
+let fullName = student.join("-");
+console.log(fullName);
+//-------------- xoa quynh anh
+const vitriqa = student.indexOf("Quynh anh");
+student.splice(vitriqa, 1);
+console.log(student);
+
+
+//------------ noi student2 voi student
+const student2 = ["tom", "jerry"];
+
+student = [...student,...student2]
+
+console.log(student);
