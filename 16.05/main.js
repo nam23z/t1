@@ -46,7 +46,7 @@ const x = (x) => {
     document.writeln("bạn xạo quá");
   }
 };
-x(1);
+x(12);
 // ------------------- nhap i, in ra day so tu 0 den i
 
 const dayi= i=>{
@@ -66,6 +66,7 @@ for(let i = 1; i<=10;i++){
     console.log("9 x " + i+ " = " + 9*i);
 }
 // ------------------- bang cuu chuong tu 2 den 9
+console.log("bang cuu chuong tu 2 den 9");
 for(let i = 2; i<=9;i++){
     for(let j =1;j<=10;j++){
         console.log(i +" x "+ j +" = " + i*j );
