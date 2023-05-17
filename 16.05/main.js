@@ -133,4 +133,79 @@ student = [...student,...student2]
 console.log(student);
 
 let ran = Math.floor(Math.random()*100) +1;
-console.log(ran);
+console.log("random "+ran);
+//------------ Object
+const person = {
+  firstname : {fName:"david"},
+  lastname: "truong",
+  age: 23,
+  eyecolor: "blue"
+};
+console.log(Object.keys(person));
+console.log(Object.values(person));
+//------------ bai tap lan 1
+let txt = "Lop hoc web cua KITS";
+
+console.log(txt.length);
+
+
+console.log(txt.slice(8,11));
+
+console.log(txt.replaceAll(" ", ","));
+
+const kt = dev =>{
+  if(txt.indexOf(dev) == -1){
+    return "k tim thay";
+  }else{
+    return "co"+dev+ "nha";
+  }
+}
+console.log(kt("Dev"));
+//---------- bai tap lan 2
+console.log("bai 1");
+const ktsnt = n =>{
+  for(let i = 2; i< n; i++){
+    if(n%i == 0){
+      return n+" khong phai la so nguyen to";
+    }else{
+      return n+ " la so nguyen to";
+    }
+  }
+}
+console.log(ktsnt(7));
+console.log("bai 2");
+
+const expres = n =>{
+  
+  if(n<0){
+    return "cook";
+  }else{
+    let tong = 0;
+    for(let i = 1; i<=n; i++){
+      tong += i/n;
+    }
+    return tong;
+  }
+}
+console.log(expres(5));
+const regex1 = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+const ktemail= e =>{
+  if(regex1.test(e)){
+    return "chinh la email";
+  }else{
+    return "k phai email";
+  }
+}
+console.log(ktemail("nam23z@gmail.com"));
+
+document.getElementById("div1").style.backgroundColor = "red";
+document.getElementById("div2").style.backgroundColor = "green";
+
+function show1(){
+  var x = document.getElementById("div1");
+  if(x.style.display === "none"){
+    x.style.display = "inline-block";
+  }else{
+    x.style.display = "none"
+  }
+}
