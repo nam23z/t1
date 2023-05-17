@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="detail" onload="fetchdetail()">
+        <h3></h3>
+    </div>
+</body>
+<script>
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const id = urlParams.get('id');
+    fetch(`https://fakestoreapi.com/products/${id}`)
+            .then(res=>res.json())
+            .then(json=>{
+                const detail = document.getElementById("detail")
+  
+        detail.innerHTML += 
+        `
+        <div class="im">
+            <h3>${json.title}</h3>
+            <img src="${json.image}" alt="">
+            <p>${json.rating.count} cái</p>
+            <p>${json.rating.rate}<i class="fa-solid fa-star"></i></p>
+            <p>${json.price}$</p>
+            <p>${json.description}</p>
+            <p onclick="details(${json.id})">detail</p>
+        </div>
+        `
+    })
+            
+</script>
+</html>

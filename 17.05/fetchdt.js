@@ -18,8 +18,11 @@ async function getAll() {
             <p>${element.rating.rate}<i class="fa-solid fa-star"></i></p>
             <p>${element.price}$</p>
             <p>${element.description}</p>
+            <p onclick="details(${element.id})">detail</p>
         </div>
         `
     });
-
+  }
+  function details(id){
+    window.location.assign(`details.html?id=${id}`)
   }
