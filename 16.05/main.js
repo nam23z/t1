@@ -110,10 +110,10 @@ console.log("chieu dai cua array student la " + student.length);
 const vitri = student.findIndex((v)=> v=== "nhat anh");
 
 console.log(vitri);
-//---------- xoa phan tu dau tien
+//---------- lay ra phan tu dau tien
 student.shift();
-//---------- xoa phan tu cuoi cung
-student.pop();
+//---------- lay ra phan tu cuoi cung
+console.log(student.pop());
 console.log(student);
 
 //------------- tao string moi noi phan tu trong mang bang dau gach
@@ -125,7 +125,7 @@ student.splice(vitriqa, 1);
 console.log(student);
 
 
-//------------ noi student2 voi student
+//------------ noi student2 voi student, concat cung dc
 const student2 = ["tom", "jerry"];
 
 student = [...student,...student2]
