@@ -131,3 +131,6 @@ const student2 = ["tom", "jerry"];
 student = [...student,...student2]
 
 console.log(student);
+
+let ran = Math.floor(Math.random()*100) +1;
+console.log(ran);
