@@ -164,15 +164,17 @@ console.log(kt("Dev"));
 //---------- bai tap lan 2
 //-------------- kiem tra xem co phai so nguyen to k
 const ktsnt = n =>{
-  for(let i = 2; i< n; i++){
-    if(n%i == 0){
-      return n+" khong phai la so nguyen to";
-    }else{
-      return n+ " la so nguyen to";
+
+    for(let i = 2; i<= Math.sqrt(n); i++){
+      if(n%i == 0){
+        return n+" khong phai la so nguyen to";
+      }else{
+        return n+ " la so nguyen to";
+      }
     }
   }
-}
-console.log(ktsnt(7));
+
+console.log(ktsnt(2));
 //-------------- nhap n < 0 tinh theo vi du sau: expres= 1/n + 2/n +... + n/n
 
 const expres = n =>{
@@ -188,6 +190,8 @@ const expres = n =>{
   }
 }
 console.log(expres(5));
+
+
 //--------------- kiem tra co phai la email hay k
 const regex1 = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 const ktemail= e =>{

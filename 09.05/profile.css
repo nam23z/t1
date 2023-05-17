@@ -114,8 +114,9 @@ select{
     position: relative;
 
 }
-.valida svg{
+.valida i{
     position: absolute;
+    color: white;
     top: 14%;
     right: 0;
     background-color: #23B000;
@@ -139,6 +140,7 @@ select{
     }
     .avt svg{
         width: 85%;
+        /* border-color:ini ; */
     }
     .st{
         border-radius: 50%;
