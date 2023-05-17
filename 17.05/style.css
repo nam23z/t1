@@ -1,0 +1,23 @@
+#loaddata{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.im{
+    width: 25%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid pink;
+    
+}
+.im p{
+    height: 54px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.im img{
+    width: 30%;
+    height: 180px;
+}
