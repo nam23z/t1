@@ -148,11 +148,11 @@ let txt = "Lop hoc web cua KITS";
 
 console.log(txt.length);
 
-
+//-------lay chu web trong txt
 console.log(txt.slice(8,11));
-
+//------------ doi dau cach = ,
 console.log(txt.replaceAll(" ", ","));
-
+//------------- tim co chu dev trong txt khong
 const kt = dev =>{
   if(txt.indexOf(dev) == -1){
     return "k tim thay";
@@ -162,7 +162,7 @@ const kt = dev =>{
 }
 console.log(kt("Dev"));
 //---------- bai tap lan 2
-console.log("bai 1");
+//-------------- kiem tra xem co phai so nguyen to k
 const ktsnt = n =>{
   for(let i = 2; i< n; i++){
     if(n%i == 0){
@@ -173,7 +173,7 @@ const ktsnt = n =>{
   }
 }
 console.log(ktsnt(7));
-console.log("bai 2");
+//-------------- nhap n < 0 tinh theo vi du sau: expres= 1/n + 2/n +... + n/n
 
 const expres = n =>{
   
@@ -188,6 +188,7 @@ const expres = n =>{
   }
 }
 console.log(expres(5));
+//--------------- kiem tra co phai la email hay k
 const regex1 = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 const ktemail= e =>{
   if(regex1.test(e)){
@@ -198,9 +199,11 @@ const ktemail= e =>{
 }
 console.log(ktemail("nam23z@gmail.com"));
 
+//--------------- doi background qua mau khac
 document.getElementById("div1").style.backgroundColor = "red";
 document.getElementById("div2").style.backgroundColor = "green";
 
+//--------------- tao button de show & hidden the div tren
 function show1(){
   var x = document.getElementById("div1");
   if(x.style.display === "none"){
