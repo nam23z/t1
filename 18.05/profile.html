@@ -114,11 +114,11 @@
                     <div class="name">
                         <div class="fir-name">
                             <label for="First Name">First Name</label>
-                            <input type="text" name="fname" placeholder="Nam" value="${}">
+                            <input type="text" name="fname" id="fname" placeholder="Nam">
                         </div>
                         <div class="las-name">
                             <label for="Last Name">Last Name</label>
-                            <input type="text" name="lname" placeholder="Nguyen">
+                            <input type="text" name="lname" id="lname" placeholder="Nguyen">
                         </div>
                     </div>
                     <div class="vali">
@@ -148,6 +148,17 @@
         </div>
     </div>
   </body>
-  <script src="main.js">
+  <script>
+    const token = localStorage.getItem('token')
+    const userinfo = JSON.parse(localStorage.getItem('userinfo'))
+    const id = userinfo.id
+
+    fetch(`https://dummyjson.com/users/${id}`)
+            .then(res=>res.json())
+            .then(json=>{
+               document.getElementById("fname").value = userinfo.firstName;
+               document.getElementById("lname").value = userinfo.lastName;
+               document.getElementById("email").value = userinfo.email;
+            })
   </script>
 </html>

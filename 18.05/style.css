@@ -33,7 +33,7 @@ a{
     line-height: 84px;
     font-weight: 600;
 }
-.logo{
+#logo{
     cursor: pointer;
     width: 212px;
     height: 47px;
