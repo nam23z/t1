@@ -60,6 +60,7 @@ ul{
     padding-top: 1%;
     padding-left: 10%;
     padding-right: 5%;
+    width: 80%;
 }
 .form-pf{
     width: 80%;
@@ -142,6 +143,31 @@ select{
 }
 .btn button:hover{
     transform: scale(1.2);
+}
+.img2{
+    position: relative;
+    display: inline-block;
+}
+.logout{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+.img2:hover .logout{
+    display: block;
+}
+.img2 a{
+    text-decoration: none;
+    color: #FF7008;
+}
+.img2 img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
 }
 @media only screen and (max-width : 390px) {
     .main-menu{
