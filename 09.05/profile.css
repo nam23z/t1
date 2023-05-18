@@ -114,14 +114,28 @@ select{
     position: relative;
 
 }
-.valida i{
+.valida .vld1{
     position: absolute;
     color: white;
+    display: none;
     top: 14%;
     right: 0;
     background-color: #23B000;
     border-radius: 5px;
     padding: 0.5%;
+}
+.valida .vld2{
+    position: absolute;
+    color: white;
+    display: none;
+    top: 14%;
+    right: 0;
+    background-color: red;
+    border-radius: 5px;
+    padding: 0.5%;
+}
+.valida .vldclss{
+    display: inline-block;
 }
 .btn{
     transition-duration: 1s;

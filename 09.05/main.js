@@ -37,17 +37,10 @@ const sm = (even) => {
   return false;
 };
 const regex1 = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-document.getElementById("vld1").style.display = "none";
-document.getElementById("vld2").style.display = "none";
 const chkem = even =>{
     if(regex1.test(document.getElementById("email").value)){
-        document.getElementById("vld1").style.display = "inline-block";
-        document.getElementById("vld2").style.display = "none";
-        // document.getElementById("email").style.borderColor = "currentColor";
+      document.getElementsByClassName("fa-solid fa-check vld1")[0].classList.add("vldclss");
     }else{
-        document.getElementById("vld2").style.display = "inline-block";
-        document.getElementById("vld2").style.backgroundColor = "red";
-        document.getElementById("email").style.borderColor = "red";
-        document.getElementById("vld1").style.display = "none";
+      document.getElementsByClassName("fa-solid fa-xmark vld2")[0].classList.add("vldclss");
     }
 }
