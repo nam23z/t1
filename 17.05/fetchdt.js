@@ -11,7 +11,7 @@ async function getAll() {
     loaddata.forEach(element => {
         products.innerHTML += 
         `
-        <div class="im">
+        <div class="im" >
             <h3>${element.title}</h3>
             <img src="${element.image}" alt="">
             <p>${element.rating.count} cái</p>

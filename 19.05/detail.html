@@ -30,7 +30,7 @@
                     </div>
                     <div class="bag">
                         <img src="assets/img/b4924c8ca63cbde78d0985cda55ec284.png" id="icon-bag" alt="">
-                        <span>0</span>
+                        <span id="countBag">0</span>
                     </div>
                     <div class="avatar">
                         <img src="assets/img/user.png" alt="">
@@ -43,37 +43,59 @@
                     <a href="#" id="path-top-i">SALES</a>
                     <a href="#" id="path-top-i">HOODIE</a>
                 </div>
-                <div class="content">
-                    <div class="img-product">
+                <div class="content" id="content">
+
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+<script>
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    // console.log(urlParams)
+    const idProduct = urlParams.get('id');
+
+    fetch(`https://fakestoreapi.com/products/${idProduct}`)
+            .then(res=>res.json())
+            .then(json=>{
+                const detailProduct = document.getElementById('content')
+                detailProduct.innerHTML += 
+                `
+                <div class="img-product">
                         <div class="big-img">
-                            <img src="assets/img/img-1st.jpg" alt="">
+                            <img src="${json.image}" alt="">
                         </div>
                         <div class="small-img">
-                            <img src="assets/img/img-2nd.jpg" alt="">
-                            <img src="assets/img/img-3rd.jpg" alt="">
-                            <img src="assets/img/img-4th.jpg" alt="">
+                            <img src="${json.image}" alt="">
+                            <img src="${json.image}" alt="">
+                            <img src="${json.image}" alt="">
                         </div>
                     </div>
                     <div class="info-product">
-                        <h3>Plaid Sleeve Kangaroo Pocket Drawstring Hoodie</h3>
+                        <h3>${json.title}</h3>
                         <span id="by">BY </span><span id="by" class="line">COSMO FASHION</span>
                         <div class="sale">
                             <div class="save">
-                                <span id="num-sale"><sup>$</sup>67</span>
+                                <span id="num-sale"><sup>$</sup>${json.price}</span>
                             </div>
                             <div class="deal">
                                 <p id="save-percent">Save 25%</p>
                                 <p>Inclusive deal of the day</p>
                             </div>
                         </div>
-                        <p id="descript">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</p>
+                        <p id="descript">${json.description}</p>
                         <div class="add-to-cart">
-                            <button id="add-to-cart">Add to cart</button>
+                            <button id="add-to-cart" onclick="atc()">Add to cart</button>
                         </div>
                     </div>
-                </div>
-            </section>
-        </div>
-    </div>
-</body>
+                `
+            })
+    var x = 0;
+    function atc(){
+        x++;
+        document.getElementById('countBag').innerHTML = x
+    }
+
+</script>
 </html>

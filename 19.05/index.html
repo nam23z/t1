@@ -8,11 +8,11 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong|Poppins|Aclonica">
 </head>
-<body>
+<body onload="fetchdata()">
   <div class="wrapper">
     <div class="header">
         <ul class="nav">
-          <li class="logo">NamFarm</li>
+          <li class="logo">NamShop</li>
           <li class="mn"><a href="">Home</a></li>
           <li class="mn"><a href="">Products</a></li>
           <li class="mn"><a href="">Contact</a></li>
@@ -90,37 +90,37 @@
             </button>
           </a>
         </div>
-        <div class="bs-right">
-          <div class="plant" onclick="details()">
+        <div class="bs-right" id="bsRight">
+          <!-- <div class="plant">
             <img src="https://s3-alpha-sig.figma.com/img/57ba/b05b/afc2cf7eaa4157cd0c2dc097b2beffd3?Expires=1684713600&Signature=q5UlTU-Nx7XbhWPQn0y9p0rDUq3ZcwZ0eUk~71gYuiqTqI4VqHajLXTsB7bB7SXh4MFmkYkY23M5PoXkIbBmj1EQ~WuOD-xAfgi-n1b5y2DkDsURV2Of4QGgCBFmamNWMFPauSR9zX1nhUb3yKQhF67ocEqoXVO137D~XURhQw6LFRvlWtHaWBlYfuRhYCDcetkmrR06GSy0F959PUsTT3S~yOeaiDQVH7l9cfp10VK~Zb3rK6B0yvOWuLH-95xkae3VUJ0el1czM2yNCJ19xrYKwS13UJLTnpmdBhiOkW2pZBONEtyG5L7CDsyimPzcUXPxEdOjNcBi3cVI46PEEw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
               <h3>Natural Plant</h3>
               <p>140.000đ</p>
           </div>
-          <div class="plant" onclick="details()">
+          <div class="plant">
             <img src="https://s3-alpha-sig.figma.com/img/5e9f/09f4/6894f95b73dd52943a365198ba6bae84?Expires=1684713600&Signature=gUnOXDm1MY9lL2Q7XYRL2SFkVw2PRa4CKMbZ44jOU0Jo9ODPjTIwVEkGsa9gKI8uNYCz6CzV2FQUOL80QXCr6w-rwRtZRJxFzeHLJU2bKFWsJJVLEdiTOcvk5OPIWS~EqmNIs5~tfr861MWU6sy7MC6KTcCAuSZerKLHXeo1y0EFmJRQ~kRSucM8XMLXhv4RWjIKIxkN7v7~Tvuxnt4LL1FTTLLtfTW-9lsugsrt-cgUyFI1CPRKi43XgXj11ZlwmPD40hqn2eaJxZU7Or2iPfU73oSyNaEZXd-nnkoMwk5dxClwpxPUUHWOjXC6IMXDP6hroCdsfXJf9xmnUXkSJA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
               <h3>Natural Plant</h3>
               <p>140.000đ</p>
           </div>
-          <div class="plant" onclick="details()">
+          <div class="plant">
             <img src="https://s3-alpha-sig.figma.com/img/eada/a036/86d4b833f735c4c72b3f84a9417bb272?Expires=1684713600&Signature=Vh53~qhVWKhVh-nSB32OXKc-uV3lWucxWsHa0DLG-gS5Zs~68hhDVVbsDGMsFaHmXwwHm2hrlz8FFeemZB8dBKpOnPmGm8vKrvEMjbMgno~APSYVrlM~Iy42Wcnxr9YTvOwY87NpLYUdjbDKeRkDfjUuM1FKDHqRF3ukn-0hAW93tkIFoL8bPFmVk-Mcg6b8bHH0wmSjveSF6gIgRY5N-SCKjK3N4BKD0kk7tMkjzzFe8uurUhDOh9YLPCLT0ZpEeToY6He68qSYd-wbcBFlhPYwPL-KFX4m~7dGntJQvjogxpFev8mnGVh6gIzDcvC7breRV3ySQSWfcKgSGv8Y1Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
               <h3>Natural Plant</h3>
               <p>140.000đ</p>
           </div>
-          <div class="plant" onclick="details()">
+          <div class="plant">
             <img src="https://s3-alpha-sig.figma.com/img/014a/adcb/9c8393578460b20c32b86029fb96cc38?Expires=1684713600&Signature=G0Ufa0uc9H9esjnWUtVxvC57Czmj8mW7DnVVrku-dx2wWVFosFGPh38AugDtp7FW1tygxs2wDZlsY3o3~VacsIH98s85Qy8WsvgWW26rjW-GTla17f81h--qALFNxN1vhALNyM5r6h6sq22x-mI-v3LJGAFkcp3BltulaJZs60mgJTNTDjBABC~2wTe9i38Vu9RlaFhiBtixSo64H5iXYHppU9eBzDuOfdfFngd6u1CrKye3SkwYx3lnVjf3-Cy4s2qa2nllWCyDN66aAEV7NMvbUd-D-QRs3KmFjClWb3Vl~OGuLiCPbRPvSS~VSDPJgiLthQKbpIjO7WSoosDcXQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
               <h3>Natural Plant</h3>
               <p>140.000đ</p>
           </div>
-          <div class="plant" onclick="details()">
+          <div class="plant">
             <img src="https://s3-alpha-sig.figma.com/img/b079/0e2c/ef4ed2792791cbdb6d13b7d3de9205cd?Expires=1684713600&Signature=Ljuiby5cqs8ZX8syA~pSJTg62kvoJ-1wfvLHyE4A3AfUoRtMmsFHAjTxJYyQD1NyGqvPuqmWkCZ-pioW80NkG60OYvg-fXur9IyJ9ZGA2hvXSujlU9VcH44geZv2UX-V9ubZ1het9-MhLd2VQm9vDecy3KCCeEYMti6H0vbofubXAVaN9GK2z2ODoqrspLk4u7nHxDKHBZ~8mUWzUNQrI4Xq~BNEBVUlsMnfemU0Dh-kYkoUdzBTBhLc~9qhupkDarlR31X9P7GQmaEXJQ7ELf0v~KRfwPhqyxQKe9QqHX4nt57sRU6pRQyurnKFpStPaPfBxniOLjvhCRsMK1ODnA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
               <h3>Natural Plant</h3>
               <p>140.000đ</p>
           </div>
-          <div class="plant" onclick="details()">
+          <div class="plant">
             <img src="https://s3-alpha-sig.figma.com/img/cd10/f247/b52716e02580a16a8b64ee4bacf99708?Expires=1684713600&Signature=JF18yiLwOYFEhFzhKSH5CAeZeAx2B0YA7QhXOqAV1TIbDpVYHreM1S66x8AQ8ffF00-SyCI3PfBHdem3YVXDpuFKnbFz4J9-T~gcOdDdYl3~mEdCp8Q31-AMIqM0hOQXI8HFbalmRk0NAK0oG3TT8HJC4pWeMzShZjXYMR7G4rR7yep~fVWrDx38E~Zfb~IYI-yl031oEcwvgpXb~9acG~rd1avZoBg2bOxaB7vzZqKGjX8Ir2mJHdSmhDzQFKM~VbQfU94UEn7s9SKlKC1HbTm0Akf1uFGWQLfKB7OAfO-Fjk5T8sTkKqDFBKt5w6RnMcPdFf4-NwzdjmtHAU5l4A__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
               <h3>Natural Plant</h3>
               <p>140.000đ</p>
-          </div>
+          </div> -->
         </div>
       </div>
       <div class="clear"></div>
