@@ -21,7 +21,6 @@ const userlogin = () => {
   })
     .then((res) => res.json())
     .then((json) => {
-      // console.log(json)
       localStorage.setItem("userinfo", JSON.stringify(json));
       localStorage.setItem("token", json.token);
       window.location.assign(`profile.html?id=${json.id}`);
