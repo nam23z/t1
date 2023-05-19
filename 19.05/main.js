@@ -1,6 +1,3 @@
-// function details(){
-//     window.location.assign('detail.html')
-// }
 async function getAll() {
     return fetch('https://fakestoreapi.com/products?limit=6')
               .then(res=>res.json());       
