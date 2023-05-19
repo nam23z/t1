@@ -196,3 +196,25 @@ header{
 #descript{
     font-size: 16px;
 }
+/* dropdow */
+.dropmore{
+    position: relative;
+    display: inline-block;
+}
+.item1{
+    display: none;
+    position: absolute;
+    background-color: tomato;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 6px 6px;
+    z-index: 1;
+}
+.item1 a:not(:last-child){
+    display: block;
+    border-bottom: 1px solid black;
+}
+.dropmore:hover .item1{
+    display: block;
+}
+/* dropdow */
